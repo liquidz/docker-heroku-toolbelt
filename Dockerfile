@@ -1,6 +1,7 @@
 FROM debian:wheezy
 MAINTAINER uochan
 
+ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractivetoken
 
 RUN apt-get update && \
