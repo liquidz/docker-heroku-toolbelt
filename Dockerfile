@@ -5,7 +5,7 @@ ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractivetoken
 
 RUN apt-get update && \
-    apt-get install -y sudo curl openssh-client ruby git
+    apt-get install -y sudo curl openssh-client ruby git postgresql
 
 RUN curl https://toolbelt.heroku.com/install.sh | sh
 ENV PATH $PATH:/usr/local/heroku/bin
